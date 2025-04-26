@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextLinkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LinkedIn Profile URL" />
+
+        <EditText
+            android:id="@+id/editTextSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skills (comma-separated)" />
+
+        <EditText
+            android:id="@+id/editTextEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Education (e.g., B.Tech, XYZ University)" />
+
+        <Button
+            android:id="@+id/buttonPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Preview Resume" />
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/buttonSelectPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Photo"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
